@@ -1,0 +1,17 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Harborline Fleet Tracking">
+  <defs>
+    <linearGradient id="g-harborline-fleet-tracking" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4646AB"/>
+      <stop offset="100%" stop-color="#302E63"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#g-harborline-fleet-tracking)"/>
+  <line x1="208.6" y1="333.9" x2="887.1" y2="217.4" stroke="white" stroke-opacity="0.14" stroke-width="1.5"/><line x1="111.8" y1="698.7" x2="544.2" y2="675.7" stroke="white" stroke-opacity="0.14" stroke-width="1.5"/><line x1="887.1" y1="217.4" x2="1099.1" y2="706.7" stroke="white" stroke-opacity="0.14" stroke-width="1.5"/><line x1="544.2" y1="675.7" x2="368.9" y2="555.3" stroke="white" stroke-opacity="0.14" stroke-width="1.5"/><line x1="1099.1" y1="706.7" x2="1101.3" y2="229.4" stroke="white" stroke-opacity="0.14" stroke-width="1.5"/><line x1="368.9" y1="555.3" x2="208.6" y2="333.9" stroke="white" stroke-opacity="0.14" stroke-width="1.5"/><line x1="1101.3" y1="229.4" x2="111.8" y2="698.7" stroke="white" stroke-opacity="0.14" stroke-width="1.5"/><circle cx="208.6" cy="333.9" r="4" fill="white" fill-opacity="0.5"/><circle cx="111.8" cy="698.7" r="4" fill="white" fill-opacity="0.5"/><circle cx="887.1" cy="217.4" r="4" fill="white" fill-opacity="0.5"/><circle cx="544.2" cy="675.7" r="4" fill="white" fill-opacity="0.5"/><circle cx="1099.1" cy="706.7" r="4" fill="white" fill-opacity="0.5"/><circle cx="368.9" cy="555.3" r="4" fill="white" fill-opacity="0.5"/><circle cx="1101.3" cy="229.4" r="4" fill="white" fill-opacity="0.5"/>
+  <rect x="0" y="0" width="1200" height="800" fill="black" fill-opacity="0.08"/>
+  <g transform="translate(64, 640)">
+    <rect width="44" height="44" rx="12" fill="white" fill-opacity="0.16"/>
+    <text x="14" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="white">D</text>
+  </g>
+  <text x="64" y="710" font-family="Arial, sans-serif" font-size="40" font-weight="700" fill="white" opacity="0.98">Harborline Fleet Tracking</text>
+  <text x="64" y="750" font-family="Arial, sans-serif" font-size="22" font-weight="500" fill="white" opacity="0.75">Maritime &amp; Transportation</text>
+</svg>

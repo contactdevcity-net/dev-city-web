@@ -1,0 +1,5 @@
+<svg width="160" height="40" viewBox="0 0 160 40" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="DevCity">
+  <rect width="32" height="32" y="4" rx="8" fill="#4646AB"/>
+  <text x="16" y="27" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="white" text-anchor="middle">D</text>
+  <text x="42" y="27" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#16162B">DevCity</text>
+</svg>

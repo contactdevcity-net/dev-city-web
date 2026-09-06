@@ -1,0 +1,17 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="FinTrack Personal Finance App">
+  <defs>
+    <linearGradient id="g-fintrack-personal-finance-app" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4646AB"/>
+      <stop offset="100%" stop-color="#302E63"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#g-fintrack-personal-finance-app)"/>
+  <line x1="866.4" y1="192.4" x2="131.5" y2="359.7" stroke="white" stroke-opacity="0.14" stroke-width="1.5"/><line x1="1109.3" y1="643.7" x2="718.9" y2="296.2" stroke="white" stroke-opacity="0.14" stroke-width="1.5"/><line x1="131.5" y1="359.7" x2="881.6" y2="318.9" stroke="white" stroke-opacity="0.14" stroke-width="1.5"/><line x1="718.9" y1="296.2" x2="555.4" y2="341.0" stroke="white" stroke-opacity="0.14" stroke-width="1.5"/><line x1="881.6" y1="318.9" x2="677.4" y2="607.4" stroke="white" stroke-opacity="0.14" stroke-width="1.5"/><line x1="555.4" y1="341.0" x2="866.4" y2="192.4" stroke="white" stroke-opacity="0.14" stroke-width="1.5"/><line x1="677.4" y1="607.4" x2="1109.3" y2="643.7" stroke="white" stroke-opacity="0.14" stroke-width="1.5"/><circle cx="866.4" cy="192.4" r="4" fill="white" fill-opacity="0.5"/><circle cx="1109.3" cy="643.7" r="4" fill="white" fill-opacity="0.5"/><circle cx="131.5" cy="359.7" r="4" fill="white" fill-opacity="0.5"/><circle cx="718.9" cy="296.2" r="4" fill="white" fill-opacity="0.5"/><circle cx="881.6" cy="318.9" r="4" fill="white" fill-opacity="0.5"/><circle cx="555.4" cy="341.0" r="4" fill="white" fill-opacity="0.5"/><circle cx="677.4" cy="607.4" r="4" fill="white" fill-opacity="0.5"/>
+  <rect x="0" y="0" width="1200" height="800" fill="black" fill-opacity="0.08"/>
+  <g transform="translate(64, 640)">
+    <rect width="44" height="44" rx="12" fill="white" fill-opacity="0.16"/>
+    <text x="14" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="white">D</text>
+  </g>
+  <text x="64" y="710" font-family="Arial, sans-serif" font-size="40" font-weight="700" fill="white" opacity="0.98">FinTrack Personal Finance App</text>
+  <text x="64" y="750" font-family="Arial, sans-serif" font-size="22" font-weight="500" fill="white" opacity="0.75">FinTech</text>
+</svg>

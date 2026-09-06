@@ -1,0 +1,17 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Choosing the Right Tech Stack">
+  <defs>
+    <linearGradient id="g-tech-stack-saas" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4646AB"/>
+      <stop offset="100%" stop-color="#302E63"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#g-tech-stack-saas)"/>
+  <line x1="850.9" y1="607.9" x2="1029.7" y2="689.6" stroke="white" stroke-opacity="0.14" stroke-width="1.5"/><line x1="478.6" y1="333.0" x2="128.9" y2="381.8" stroke="white" stroke-opacity="0.14" stroke-width="1.5"/><line x1="1029.7" y1="689.6" x2="215.6" y2="152.4" stroke="white" stroke-opacity="0.14" stroke-width="1.5"/><line x1="128.9" y1="381.8" x2="1033.1" y2="293.6" stroke="white" stroke-opacity="0.14" stroke-width="1.5"/><line x1="215.6" y1="152.4" x2="90.6" y2="505.4" stroke="white" stroke-opacity="0.14" stroke-width="1.5"/><line x1="1033.1" y1="293.6" x2="850.9" y2="607.9" stroke="white" stroke-opacity="0.14" stroke-width="1.5"/><line x1="90.6" y1="505.4" x2="478.6" y2="333.0" stroke="white" stroke-opacity="0.14" stroke-width="1.5"/><circle cx="850.9" cy="607.9" r="4" fill="white" fill-opacity="0.5"/><circle cx="478.6" cy="333.0" r="4" fill="white" fill-opacity="0.5"/><circle cx="1029.7" cy="689.6" r="4" fill="white" fill-opacity="0.5"/><circle cx="128.9" cy="381.8" r="4" fill="white" fill-opacity="0.5"/><circle cx="215.6" cy="152.4" r="4" fill="white" fill-opacity="0.5"/><circle cx="1033.1" cy="293.6" r="4" fill="white" fill-opacity="0.5"/><circle cx="90.6" cy="505.4" r="4" fill="white" fill-opacity="0.5"/>
+  <rect x="0" y="0" width="1200" height="800" fill="black" fill-opacity="0.08"/>
+  <g transform="translate(64, 640)">
+    <rect width="44" height="44" rx="12" fill="white" fill-opacity="0.16"/>
+    <text x="14" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="white">D</text>
+  </g>
+  <text x="64" y="710" font-family="Arial, sans-serif" font-size="40" font-weight="700" fill="white" opacity="0.98">Choosing the Right Tech Stack</text>
+  <text x="64" y="750" font-family="Arial, sans-serif" font-size="22" font-weight="500" fill="white" opacity="0.75">Engineering</text>
+</svg>
