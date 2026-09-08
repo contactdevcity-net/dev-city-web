@@ -7,9 +7,10 @@ import { mainNav } from "@/data/navigation";
 import { Container } from "@/components/ui/Container";
 import { Logo } from "@/components/layout/Logo";
 import { MobileMenu } from "@/components/layout/MobileMenu";
+import { LanguageSwitcher } from "@/components/layout/LanguageSwitcher";
 import { cn } from "@/lib/utils";
 
-export function Navbar() {
+export function Navbar({ dict }: { dict?: any }) {
   const [openMenu, setOpenMenu] = useState<string | null>(null);
   const [scrolled, setScrolled] = useState(false);
 
@@ -114,8 +115,9 @@ export function Navbar() {
             href="/contact"
             className="hero-btn-primary relative hidden overflow-hidden rounded-full px-5 py-2.5 text-sm font-semibold text-white shadow-sm lg:inline-flex"
           >
-            Let&apos;s Talk
+            {dict?.navbar?.letsTalk || "Let's Talk"}
           </a>
+          <LanguageSwitcher />
           <MobileMenu />
         </div>
       </Container>

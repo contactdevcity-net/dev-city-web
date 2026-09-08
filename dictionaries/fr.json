@@ -1,0 +1,27 @@
+{
+  "navbar": {
+    "letsTalk": "Parlons-en",
+    "menu": "Menu"
+  },
+  "hero": {
+    "available": "Disponible pour de nouveaux projets",
+    "titlePrefix": "Nous développons des logiciels",
+    "titleGradient": "qui font avancer votre entreprise",
+    "description": "DevCity s'associe à des entreprises ambitieuses pour concevoir, développer et faire évoluer des logiciels web, mobiles et basés sur l'IA — du premier prototype à la plateforme de production.",
+    "startProject": "Démarrer un projet",
+    "viewWork": "Voir notre travail",
+    "trustedBy": "Fait confiance par",
+    "engineeringPartners": "partenaires d'ingénierie",
+    "stats": {
+      "productsShipped": "Produits livrés",
+      "partners": "Partenaires d'ingénierie",
+      "teamTenure": "Ancienneté moy. équipe",
+      "clientSatisfaction": "Satisfaction client"
+    },
+    "explore": "Découvrez ce que nous construisons"
+  },
+  "footer": {
+    "description": "DevCity conçoit et développe des logiciels web, mobiles et basés sur l'IA pour des entreprises ambitieuses.",
+    "rights": "Tous droits réservés."
+  }
+}

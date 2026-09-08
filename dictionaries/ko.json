@@ -1,0 +1,27 @@
+{
+  "navbar": {
+    "letsTalk": "문의하기",
+    "menu": "메뉴"
+  },
+  "hero": {
+    "available": "새 프로젝트 문의 가능",
+    "titlePrefix": "비즈니스를 발전시키는",
+    "titleGradient": "소프트웨어를 구축합니다",
+    "description": "DevCity는 야심 찬 기업들과 협력하여 첫 프로토타입부터 프로덕션 플랫폼까지 웹, 모바일, AI 기반 소프트웨어를 설계, 엔지니어링 및 확장합니다.",
+    "startProject": "프로젝트 시작하기",
+    "viewWork": "작업 보기",
+    "trustedBy": "신뢰하는",
+    "engineeringPartners": "개의 엔지니어링 파트너",
+    "stats": {
+      "productsShipped": "출시된 제품",
+      "partners": "엔지니어링 파트너",
+      "teamTenure": "평균 팀 근속",
+      "clientSatisfaction": "고객 만족도"
+    },
+    "explore": "우리가 만드는 것 살펴보기"
+  },
+  "footer": {
+    "description": "DevCity는 야심 찬 기업들을 위해 웹, 모바일, AI 기반 소프트웨어를 설계하고 구축합니다.",
+    "rights": "모든 권리 보유."
+  }
+}

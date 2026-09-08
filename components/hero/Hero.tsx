@@ -5,8 +5,11 @@ import { HeroBackground } from "@/components/hero/HeroBackground";
 import { HeroVisual } from "@/components/hero/HeroVisual";
 import { AnimatedCounter } from "@/components/hero/AnimatedCounter";
 import { FloatingBadges } from "@/components/hero/FloatingBadges";
+import { getDictionary } from "@/lib/dictionaries";
 
-export function Hero() {
+export async function Hero({ lang }: { lang: string }) {
+  const dict = await getDictionary(lang);
+
   return (
     <section className="hero-section relative min-h-[100svh] overflow-hidden">
       {/* Animated background layers */}
@@ -21,7 +24,7 @@ export function Hero() {
             <span className="relative inline-flex h-2 w-2 rounded-full bg-green-500" />
           </span>
           <span className="text-xs font-semibold tracking-wide text-muted uppercase">
-            Available for new projects
+            {dict.hero.available}
           </span>
         </div>
 
@@ -30,32 +33,27 @@ export function Hero() {
           {/* Left: Text content */}
           <div className="max-w-2xl text-center lg:text-left">
             <h1 className="hero-stagger-2 text-4xl font-extrabold leading-[1.08] tracking-tight text-ink sm:text-5xl lg:text-[3.5rem] xl:text-6xl">
-              We Build Software{" "}
+              {dict.hero.titlePrefix}{" "}
               <span className="hero-gradient-text">
-                That Moves Business Forward
+                {dict.hero.titleGradient}
               </span>
             </h1>
 
             <p className="hero-stagger-3 mt-6 text-base leading-relaxed text-muted sm:text-lg lg:text-xl lg:leading-relaxed">
-              DevCity partners with ambitious companies to design, engineer, and
-              scale{" "}
-              <span className="font-semibold text-ink">web</span>,{" "}
-              <span className="font-semibold text-ink">mobile</span>, and{" "}
-              <span className="font-semibold text-ink">AI-powered</span>{" "}
-              software — from first prototype to production platform.
+              {dict.hero.description}
             </p>
 
             {/* CTA buttons */}
             <div className="hero-stagger-4 mt-8 flex flex-col items-center gap-3 sm:flex-row lg:items-start lg:justify-start">
-              <Button href="/contact" size="lg" className="hero-btn-primary group relative overflow-hidden !border-0 text-white">
+              <Button href={`/${lang}/contact`} size="lg" className="hero-btn-primary group relative overflow-hidden !border-0 text-white">
                 <span className="relative z-10 flex items-center gap-2">
-                  Start a Project
+                  {dict.hero.startProject}
                   <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
                 </span>
               </Button>
-              <Button href="/projects" variant="secondary" size="lg" className="group gap-2">
+              <Button href={`/${lang}/projects`} variant="secondary" size="lg" className="group gap-2">
                 <Play className="size-4 text-primary transition-transform group-hover:scale-110" aria-hidden="true" />
-                View Our Work
+                {dict.hero.viewWork}
               </Button>
             </div>
 
@@ -77,7 +75,7 @@ export function Hero() {
                 ))}
               </div>
               <span>
-                Trusted by <span className="font-semibold text-ink">60+</span> engineering partners
+                {dict.hero.trustedBy} <span className="font-semibold text-ink">60+</span> {dict.hero.engineeringPartners}
               </span>
             </div>
           </div>
@@ -100,10 +98,10 @@ export function Hero() {
             />
 
             <div className="grid grid-cols-2 gap-6 sm:grid-cols-4 sm:gap-8">
-              <AnimatedCounter end={120} suffix="+" label="Products shipped" delay={0} />
-              <AnimatedCounter end={60} suffix="+" label="Engineering partners" delay={200} />
-              <AnimatedCounter end={9} suffix=" yrs" label="Avg team tenure" delay={400} />
-              <AnimatedCounter end={99} suffix="%" label="Client satisfaction" delay={600} />
+              <AnimatedCounter end={120} suffix="+" label={dict.hero.stats.productsShipped} delay={0} />
+              <AnimatedCounter end={60} suffix="+" label={dict.hero.stats.partners} delay={200} />
+              <AnimatedCounter end={9} suffix=" yrs" label={dict.hero.stats.teamTenure} delay={400} />
+              <AnimatedCounter end={99} suffix="%" label={dict.hero.stats.clientSatisfaction} delay={600} />
             </div>
           </div>
         </div>
@@ -114,12 +112,11 @@ export function Hero() {
             href="#trusted-by"
             className="group flex flex-col items-center gap-2 text-sm font-medium text-muted transition-colors hover:text-primary"
           >
-            <span>Explore what we build</span>
+            <span>{dict.hero.explore}</span>
             <ArrowRight className="size-4 rotate-90 transition-transform group-hover:translate-y-1" aria-hidden="true" />
           </a>
         </div>
       </Container>
-
     </section>
   );
 }

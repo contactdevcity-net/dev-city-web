@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { buildMetadata } from "@/lib/seo";
@@ -19,11 +19,21 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+import { getDictionary } from "@/lib/dictionaries";
+
+export default async function RootLayout({
+  children,
+  params,
+}: {
+  children: React.ReactNode;
+  params: Promise<{ lang: string }>;
+}) {
   const jsonLd = [organizationSchema(), websiteSchema()];
+  const { lang } = await params;
+  const dict = await getDictionary(lang);
 
   return (
-    <html lang="en" className={`${jakarta.variable} h-full antialiased`}>
+    <html lang={lang} className={`${jakarta.variable} h-full antialiased`}>
       <body className="flex min-h-full flex-col bg-bg font-sans text-ink">
         <a
           href="#main-content"
@@ -31,7 +41,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         >
           Skip to content
         </a>
-        <Navbar />
+        <Navbar dict={dict} />
         <main id="main-content" className="flex-1">
           {children}
         </main>

@@ -1,0 +1,27 @@
+{
+  "navbar": {
+    "letsTalk": "Let's Talk",
+    "menu": "Menu"
+  },
+  "hero": {
+    "available": "Available for new projects",
+    "titlePrefix": "We Build Software",
+    "titleGradient": "That Moves Business Forward",
+    "description": "DevCity partners with ambitious companies to design, engineer, and scale web, mobile, and AI-powered software — from first prototype to production platform.",
+    "startProject": "Start a Project",
+    "viewWork": "View Our Work",
+    "trustedBy": "Trusted by",
+    "engineeringPartners": "engineering partners",
+    "stats": {
+      "productsShipped": "Products shipped",
+      "partners": "Engineering partners",
+      "teamTenure": "Avg team tenure",
+      "clientSatisfaction": "Client satisfaction"
+    },
+    "explore": "Explore what we build"
+  },
+  "footer": {
+    "description": "DevCity designs and builds web, mobile, and AI-powered software for ambitious businesses.",
+    "rights": "All rights reserved."
+  }
+}

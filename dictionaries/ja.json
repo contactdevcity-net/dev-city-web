@@ -1,0 +1,27 @@
+{
+  "navbar": {
+    "letsTalk": "ご相談はこちら",
+    "menu": "メニュー"
+  },
+  "hero": {
+    "available": "新規プロジェクト受付中",
+    "titlePrefix": "ビジネスを前進させる",
+    "titleGradient": "ソフトウェアを構築します",
+    "description": "DevCityは野心的な企業と提携し、最初のプロトタイプから本番プラットフォームまで、Web、モバイル、AIを搭載したソフトウェアの設計、開発、拡張を行います。",
+    "startProject": "プロジェクトを始める",
+    "viewWork": "実績を見る",
+    "trustedBy": "信頼される",
+    "engineeringPartners": "のエンジニアリングパートナー",
+    "stats": {
+      "productsShipped": "提供した製品",
+      "partners": "エンジニアリングパートナー",
+      "teamTenure": "平均チーム在籍年数",
+      "clientSatisfaction": "顧客満足度"
+    },
+    "explore": "私たちが作るものを探る"
+  },
+  "footer": {
+    "description": "DevCityは野心的な企業のためにWeb、モバイル、AIを搭載したソフトウェアを設計・構築します。",
+    "rights": "無断転載を禁じます。"
+  }
+}

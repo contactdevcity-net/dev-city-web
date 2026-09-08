@@ -17,10 +17,12 @@ export const metadata = buildMetadata({
   path: "/",
 });
 
-export default function HomePage() {
+export default async function HomePage({ params }: { params: Promise<{ lang: string }> }) {
+  const { lang } = await params;
+  
   return (
     <>
-      <Hero />
+      <Hero lang={lang} />
       <TrustedBy />
       <ServicesSection />
       <FeaturedProjects />
