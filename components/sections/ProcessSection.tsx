@@ -5,7 +5,7 @@ import { processSteps } from "@/data/process";
 
 export function ProcessSection() {
   return (
-    <section className="bg-white py-24 sm:py-32">
+    <section className="section-light-alt section-divider-light py-24 sm:py-32">
       <Container>
         <SectionHeader
           eyebrow="How We Work"
@@ -19,13 +19,15 @@ export function ProcessSection() {
             </AnimatedSection>
           ))}
         </ol>
-        <ol className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-3" start={5}>
-          {processSteps.slice(4).map((step, index) => (
-            <AnimatedSection key={step.number} as="li" delay={index * 70}>
-              <StepCard step={step} />
-            </AnimatedSection>
-          ))}
-        </ol>
+        {processSteps.length > 4 && (
+          <ol className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-3" start={5}>
+            {processSteps.slice(4).map((step, index) => (
+              <AnimatedSection key={step.number} as="li" delay={index * 70}>
+                <StepCard step={step} />
+              </AnimatedSection>
+            ))}
+          </ol>
+        )}
       </Container>
     </section>
   );
@@ -33,10 +35,29 @@ export function ProcessSection() {
 
 function StepCard({ step }: { step: (typeof processSteps)[number] }) {
   return (
-    <div className="h-full rounded-2xl border border-border p-6">
-      <span className="text-sm font-bold text-primary">{step.number}</span>
-      <h3 className="mt-3 text-lg font-semibold text-ink">{step.title}</h3>
-      <p className="mt-2 text-sm leading-relaxed text-muted">{step.description}</p>
+    <div className="card-hero-glass card-hero-glass-hover group relative flex h-full flex-col overflow-hidden p-7">
+      {/* Decorative top gradient accent line on hover */}
+      <div
+        className="pointer-events-none absolute inset-x-0 top-0 h-[2px] opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+        style={{
+          background: "linear-gradient(90deg, transparent, #2563eb, #7c3aed, transparent)",
+        }}
+        aria-hidden="true"
+      />
+
+      {/* Large ghost number in the background */}
+      <div
+        className="pointer-events-none absolute right-3 top-2 select-none text-7xl font-black text-slate-200/60 transition-colors duration-500 group-hover:text-primary/10"
+        aria-hidden="true"
+      >
+        {step.number}
+      </div>
+
+      {/* Numbered badge */}
+      <div className="step-badge-hero mb-5">{step.number}</div>
+
+      <h3 className="relative text-lg font-bold text-ink">{step.title}</h3>
+      <p className="relative mt-2.5 text-sm leading-relaxed text-muted">{step.description}</p>
     </div>
   );
 }

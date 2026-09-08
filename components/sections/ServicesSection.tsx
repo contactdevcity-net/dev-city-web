@@ -6,7 +6,7 @@ import { services } from "@/data/services";
 
 export function ServicesSection() {
   return (
-    <section className="py-24 sm:py-32">
+    <section className="section-light section-divider-light py-24 sm:py-32">
       <Container>
         <SectionHeader
           eyebrow="What We Do"

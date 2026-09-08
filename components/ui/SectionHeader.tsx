@@ -26,11 +26,12 @@ export function SectionHeader({
       )}
     >
       {eyebrow && (
-        <span className="mb-3 inline-flex items-center rounded-full border border-border bg-white px-3 py-1 text-xs font-semibold uppercase tracking-wide text-primary">
+        <span className={cn("hero-eyebrow mb-4 inline-flex", align === "center" && "mx-auto")}>
+          <span className="h-1.5 w-1.5 rounded-full bg-primary" />
           {eyebrow}
         </span>
       )}
-      <Title className="text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
+      <Title className="mt-2 text-3xl font-extrabold tracking-tight text-ink sm:text-4xl lg:text-[2.6rem] lg:leading-tight">
         {title}
       </Title>
       {description && (
