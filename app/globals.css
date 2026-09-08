@@ -182,11 +182,21 @@ body {
 
 
 /* ═══════════════════════════════════════════════════════════════════
-   HERO-INSPIRED LIGHT DESIGN SYSTEM
-   Used across all homepage sections for 100% visual coherence.
+   ULTRA-MODERN TECH DESIGN SYSTEM (2026 UI/UX TRENDS)
 ════════════════════════════════════════════════════════════════════ */
 
-/* ─── Section wrappers ─── */
+/* ─── Modern Grid Pattern Overlay ─── */
+.bg-tech-grid {
+  background-image: radial-gradient(rgba(148, 163, 184, 0.25) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.bg-tech-dots {
+  background-image: radial-gradient(rgba(37, 99, 235, 0.15) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* ─── Section Wrappers ─── */
 .section-light {
   background-color: #ffffff;
   position: relative;
@@ -199,15 +209,14 @@ body {
   overflow: hidden;
 }
 
-/* Ambient blue/purple mesh blobs matching Hero */
 .section-light::before,
 .section-light-alt::before {
   content: "";
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 60% 50% at 0% 10%,   rgba(37, 99, 235, 0.05) 0%, transparent 60%),
-    radial-gradient(ellipse 50% 50% at 100% 90%, rgba(124, 58, 237, 0.05) 0%, transparent 60%);
+    radial-gradient(ellipse 60% 50% at 0% 10%,   rgba(37, 99, 235, 0.06) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 50% at 100% 90%, rgba(124, 58, 237, 0.06) 0%, transparent 60%);
   pointer-events: none;
   z-index: 0;
 }
@@ -218,48 +227,48 @@ body {
   z-index: 1;
 }
 
-/* ─── Glass cards matching Hero stats bar ─── */
+/* ─── Bento & Hero Glass Cards ─── */
 .card-hero-glass {
-  background: rgba(255, 255, 255, 0.85);
-  border: 1px solid rgba(226, 232, 240, 0.8);
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(226, 232, 240, 0.85);
   border-radius: 1.25rem;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  box-shadow: 0 4px 20px -2px rgba(37, 99, 235, 0.05), 0 2px 6px -1px rgba(0, 0, 0, 0.02);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 4px 20px -2px rgba(37, 99, 235, 0.04), 0 2px 6px -1px rgba(0, 0, 0, 0.02);
 }
 
 .card-hero-glass-hover {
   transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .card-hero-glass-hover:hover {
-  background: rgba(255, 255, 255, 0.95);
-  border-color: rgba(37, 99, 235, 0.35);
-  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.98);
+  border-color: rgba(37, 99, 235, 0.4);
+  transform: translateY(-6px);
   box-shadow:
-    0 20px 40px -10px rgba(37, 99, 235, 0.12),
-    0  4px 12px -2px rgba(124, 58, 237, 0.08);
+    0 24px 48px -12px rgba(37, 99, 235, 0.15),
+    0  6px 16px -2px rgba(124, 58, 237, 0.08);
 }
 
-/* Legacy alias for compatibility */
+/* ─── Legacy Card Glass ─── */
 .card-glass {
-  background: rgba(255, 255, 255, 0.85);
-  border: 1px solid rgba(226, 232, 240, 0.8);
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(226, 232, 240, 0.85);
   border-radius: 1.25rem;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  box-shadow: 0 4px 20px -2px rgba(37, 99, 235, 0.05);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 4px 20px -2px rgba(37, 99, 235, 0.04);
 }
 .card-glass-hover {
   transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .card-glass-hover:hover {
-  background: rgba(255, 255, 255, 0.95);
-  border-color: rgba(37, 99, 235, 0.35);
-  transform: translateY(-5px);
-  box-shadow: 0 20px 40px -10px rgba(37, 99, 235, 0.12);
+  background: rgba(255, 255, 255, 0.98);
+  border-color: rgba(37, 99, 235, 0.4);
+  transform: translateY(-6px);
+  box-shadow: 0 24px 48px -12px rgba(37, 99, 235, 0.15);
 }
 
-/* ─── Icon Wrap ─── */
+/* ─── Glowing Icon Containers ─── */
 .hero-icon-wrap {
   display: flex;
   align-items: center;
@@ -267,18 +276,18 @@ body {
   width: 3rem;
   height: 3rem;
   border-radius: 0.875rem;
-  background: linear-gradient(135deg, rgba(37, 99, 235, 0.08) 0%, rgba(124, 58, 237, 0.08) 100%);
-  border: 1px solid rgba(37, 99, 235, 0.18);
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.09) 0%, rgba(124, 58, 237, 0.09) 100%);
+  border: 1px solid rgba(37, 99, 235, 0.2);
   color: #2563eb;
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .card-hero-glass-hover:hover .hero-icon-wrap,
 .card-glass-hover:hover .hero-icon-wrap {
   background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
   border-color: transparent;
   color: #ffffff;
-  transform: scale(1.08);
-  box-shadow: 0 8px 20px -4px rgba(37, 99, 235, 0.4);
+  transform: scale(1.1);
+  box-shadow: 0 8px 24px -4px rgba(37, 99, 235, 0.4);
 }
 
 /* ─── Eyebrow Pill ─── */
@@ -286,7 +295,7 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.35rem 0.9rem;
+  padding: 0.35rem 0.95rem;
   border-radius: 9999px;
   font-size: 0.725rem;
   font-weight: 700;
@@ -295,15 +304,16 @@ body {
   background: rgba(37, 99, 235, 0.06);
   border: 1px solid rgba(37, 99, 235, 0.2);
   color: #2563eb;
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 2px 8px -1px rgba(37, 99, 235, 0.08);
 }
 
 /* ─── Section Divider ─── */
 .section-divider-light {
-  border-top: 1px solid rgba(226, 232, 240, 0.7);
+  border-top: 1px solid rgba(226, 232, 240, 0.8);
 }
 
-/* ─── Marquee ─── */
+/* ─── Marquee Track ─── */
 .marquee-track {
   display: flex;
   width: max-content;
@@ -321,15 +331,15 @@ body {
 .hero-cta-card {
   border-radius: 2rem;
   padding: 1.5px;
-  background: linear-gradient(135deg, rgba(37,99,235,0.4) 0%, rgba(109,40,217,0.3) 50%, rgba(124,58,237,0.4) 100%);
-  box-shadow: 0 20px 50px -10px rgba(37, 99, 235, 0.15);
+  background: linear-gradient(135deg, rgba(37,99,235,0.45) 0%, rgba(109,40,217,0.35) 50%, rgba(124,58,237,0.45) 100%);
+  box-shadow: 0 20px 60px -10px rgba(37, 99, 235, 0.18);
 }
 .hero-cta-card-inner {
   border-radius: calc(2rem - 1.5px);
-  background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,252,0.95) 100%);
+  background: linear-gradient(135deg, rgba(255,255,255,0.96) 0%, rgba(248,250,252,0.96) 100%);
   position: relative;
   overflow: hidden;
-  backdrop-filter: blur(16px);
+  backdrop-filter: blur(18px);
 }
 
 /* ─── Step badge ─── */
@@ -356,6 +366,21 @@ body {
   text-transform: uppercase;
   color: #2563eb;
   margin-bottom: 0.875rem;
+}
+
+/* ─── Glowing Beam Overlay ─── */
+.hover-beam-line {
+  pointer-events: none;
+  position: absolute;
+  inset-x: 0;
+  top: 0;
+  height: 2px;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  background: linear-gradient(90deg, transparent, #2563eb, #7c3aed, transparent);
+}
+.card-hero-glass-hover:hover .hover-beam-line {
+  opacity: 1;
 }
 
 /* ─── Reduced Motion ─── */

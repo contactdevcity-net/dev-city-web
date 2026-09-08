@@ -2,6 +2,7 @@ import { Container } from "@/components/ui/Container";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { AnimatedSection } from "@/components/AnimatedSection";
 import { groupTechnologiesByCategory } from "@/data/technologies";
+import { Layers } from "lucide-react";
 
 export function TechStackSection() {
   const groups = groupTechnologiesByCategory();
@@ -10,31 +11,48 @@ export function TechStackSection() {
     <section className="section-light section-divider-light py-24 sm:py-32">
       <Container>
         <SectionHeader
-          eyebrow="Our Stack"
+          eyebrow="Our Tech Stack"
           title="Modern engineering, chosen deliberately"
-          description="We standardize on a proven set of technologies across every layer of the stack, so your product stays maintainable long after launch."
+          description="We standardize on a proven set of modern technologies across every layer of the stack, ensuring high performance, developer velocity, and maintainability."
         />
-        <div className="mt-14 grid grid-cols-2 gap-5 sm:grid-cols-3 lg:grid-cols-5">
-          {groups.map((group, index) => (
-            <AnimatedSection key={group.category} delay={(index % 5) * 60}>
-              <div className="card-hero-glass card-hero-glass-hover group h-full p-6 relative overflow-hidden">
-                {/* Decorative top border gradient line on hover */}
-                <div
-                  className="pointer-events-none absolute inset-x-0 top-0 h-[2px] opacity-0 transition-opacity duration-300 group-hover:opacity-100"
-                  style={{
-                    background: "linear-gradient(90deg, transparent, #2563eb, #7c3aed, transparent)",
-                  }}
-                  aria-hidden="true"
-                />
 
-                <p className="tech-category-hero">{group.category}</p>
-                <ul className="space-y-2">
-                  {group.items.map((item) => (
-                    <li key={item.name} className="text-sm font-medium text-slate-700 transition-colors group-hover:text-ink">
-                      {item.name}
-                    </li>
-                  ))}
-                </ul>
+        <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {groups.map((group, index) => (
+            <AnimatedSection key={group.category} delay={(index % 3) * 80}>
+              <div className="card-hero-glass card-hero-glass-hover group relative flex h-full flex-col justify-between overflow-hidden p-7">
+                <div className="hover-beam-line" />
+
+                <div>
+                  <div className="flex items-center justify-between">
+                    <div className="hero-icon-wrap">
+                      <Layers className="size-5" aria-hidden="true" />
+                    </div>
+                    <span className="text-xs font-mono font-bold text-primary bg-primary/10 border border-primary/20 px-2.5 py-0.5 rounded-full">
+                      {group.items.length} Technologies
+                    </span>
+                  </div>
+
+                  <h3 className="mt-5 text-xl font-extrabold text-ink">{group.category}</h3>
+                  <p className="mt-1 text-xs text-muted">Production-proven frameworks & infrastructure</p>
+
+                  {/* Interactive technology pills */}
+                  <div className="mt-6 flex flex-wrap gap-2">
+                    {group.items.map((item) => (
+                      <span
+                        key={item.name}
+                        className="inline-flex items-center gap-1.5 rounded-lg border border-border bg-slate-50/80 px-3 py-1.5 text-xs font-semibold text-ink transition-all duration-200 hover:border-primary/40 hover:bg-primary/5 hover:text-primary"
+                      >
+                        <span className="h-1.5 w-1.5 rounded-full bg-primary/60" />
+                        {item.name}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="mt-8 border-t border-border/60 pt-4 flex items-center justify-between text-xs font-medium text-muted">
+                  <span>Enterprise standard</span>
+                  <span className="text-primary font-bold">100% Type-Safe</span>
+                </div>
               </div>
             </AnimatedSection>
           ))}
