@@ -10,7 +10,7 @@ cp .env.example .env.local   # then fill in values as needed
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000).
+Open [http://localhost:3000](http://localhost:3000)..
 
 ## Scripts
 
